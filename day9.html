@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management System</title>
+  <link rel="stylesheet" href="day9.css">
+</head>
+<body>
+    <header>
+      <div class="container">
+        <h1>Event Management System</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Add Event</a></li>
+            <li><a href="#">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+        
+        <section class="search-container">
+            <form id="search-form">
+              <input type="text" id="search-input" placeholder="Search by title, date, or location">
+              <button type="submit">Search</button>
+            </form>
+          </section>
+          
+          <section class="event-listing">
+            <!-- Event cards will be dynamically populated here -->
+          </section>
+
+        <section class="event-listing">
+            <div class="event-card">
+                <img src="marriage.jpg">
+                <img src="marriage 1.jpg"> 
+              <h2 class="event-title">Marriage Event</h2>
+              <p class="event-details">Date: sep 29, 2024</p>
+              <p class="event-details">Time: 10:00 AM - 12:00 PM</p>
+              <p class="event-details">Location: Hyderabad</p>
+            </div>
+            <div class="event-card">
+                <img src="birthday.webp">
+                <img src="birthday1.avif">
+              <h2 class="event-title">Birtday Event</h2>
+              <p class="event-details">Date: sep 29, 2024</p>
+              <p class="event-details">Time: 2:00 PM - 4:00 PM</p>
+              <p class="event-details">Location: Guntur</p>
+            </div>
+            <div class="event-card">
+                <img src="ring.jpg">
+                <img src="ring1.webp">
+                <h2 class="event-title">Ring Ceremony</h2>
+                <p class="event-details">Date: sep 29, 2024</p>
+                <p class="event-details">Time: 12:00 PM - 4:00 PM</p>
+                <p class="event-details">Location: Guntur</p>
+              </div>
+              <div class="event-card">
+                <img src="annual.jpg">
+                <h2 class="event-title">Annual function</h2>
+                <p class="event-details">Date: sep 29, 2024</p>
+                <p class="event-details">Time: 9:00 AM - 4:00 PM</p>
+                <p class="event-details">Location: Tenali</p>
+              </div>
+            <!-- Add more event cards as needed -->
+          </section>
+  
+          <section class="add-event-form">
+            <h2>Add Event</h2>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="event-title">Event Title:</label>
+                <input type="text" id="event-title" name="event-title" required>
+              </div>
+              <div class="form-group">
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+              </div>
+              <div class="form-group">
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" name="event-time" required>
+              </div>
+              <div class="form-group">
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location" required>
+              </div>
+              <div class="form-group">
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" name="event-description" rows="4" required></textarea>
+              </div>
+              <button type="submit">Add Event</button>
+            </form>
+        </section>
+  
+    <footer>
+      <div class="container">
+        <h3>Contact Us :-    <span>E-Mail id:jyothimindyala29@gmail.com</span></h3>
+      </div>
+    </footer>
+  </body>
+</html>
